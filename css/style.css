@@ -1,0 +1,231 @@
+body, html {
+  	height: 100%;
+  	margin: 0px;
+  	background-image: linear-gradient(140deg, #797D62 40%, #9B9B7A 50%);
+}
+
+:root {
+  --rgb: 0 76 153;
+}
+
+.container > div, canvas {
+	position: absolute;
+	top: 50%;
+ 	left: 50%;
+ 	-webkit-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+}
+
+.layer0 { 
+	width: 340px;
+  	height: 340px;
+  	background-color: #1b1b31;
+  	
+  	border-radius: 4px;
+  	border-width: 30px;
+ 	border-style: solid;
+ 	border-color: blue;//testing y canvas
+ 	
+}
+
+/*SCREEN LINES*/
+.layer1 { 
+	
+	width: 340px;
+  	height: 340px;
+  
+  	background: linear-gradient( rgba(2, 19, 36, 0.5) 0 8px, #d0d0d000 2px 8px), linear-gradient(90deg, rgba(255, 193, 193, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  	background-size: 100% 10px, 20px 100%;
+  	animation: pan-overlay 9s infinite linear;
+ }
+ 
+ @keyframes pan-overlay {
+  from {
+    background-position: 0% 0%;
+  }
+  
+  to {
+    background-position: 0% 100%; 
+  }
+}
+
+/*LOGO y MODELO*/
+
+@font-face {
+    font-family: 'bigmacca';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/bigmacca.ttf);
+}
+
+@font-face {
+    font-family: 'Vegapunk';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/Vegapunk-FREE.otf);
+}
+
+
+.layer2 {
+	width: 400px;
+  	height: 400px;
+}
+
+.lbContainer {
+	width:100%;
+	height:50px;
+	border-radius: 5px;
+	
+	position: absolute;
+	bottom: -50px;
+	
+	box-shadow: 2px 2px 1px #6868d4 inset, -2px -2px 1px #494996 inset;
+	background-color: #1b1b31;
+}
+
+/*LOGO*/
+.logo {
+	/*box details*/
+	position: absolute;
+  	top: 14px;
+  	left: 150px;
+  	/*logo details*/
+  	color:#1b1b31;
+	font-size: 17px;
+	font-family: Vegapunk;
+	text-shadow: 1px 1px 1px #000,0px 0px 10px #494996, -1px -1px 1px #6e6ee1;
+}
+
+/*ON OFF button*/
+.btn{
+	position: absolute;
+  	right: 13px;
+  	top: 14px;
+  	background-color: #1b1b31;
+  	border-radius: 50%;
+  	color: #14ea14;
+  	border-color: #6e6ee1;
+  	font-size: 14px;
+}
+
+
+
+
+/*END LOGO y MODELO*/
+
+/* para la screen?
+.tip3 { font-family: hVideoRegular; }
+.tip4 { font-family: hVideoBold; }
+.tip5 { font-family: GoldDOS; }
+.tip6 { font-family: GoldDOS3D; }
+*/
+/*para las instrucciones?
+.tip9 { font-family: Sephora; }
+.tip11 { font-family: Warning; }
+*/
+
+
+
+@font-face {
+    font-family: 'hVideoRegular';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/HomeVideo-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'hVideoBold';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/HomeVideo-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'GoldDOS';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/GOldD.ttf);
+}
+
+@font-face {
+    font-family: 'GoldDOS3D';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/GOldD3D.ttf);
+}
+
+@font-face {
+    font-family: 'Sephora';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/Sephora.ttf);
+}
+
+@font-face {
+    font-family: 'Warning';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/WARNING.ttf);
+}
+
+
+/*
+metodo viewPort y height 100vh
+box-shadow: 2px 2px 5px white inset, -5px -5px 15px #18265b inset;
+*/
+
+
+
+/*DEVICE OUT CONFIG*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	.layer0 {
+	
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+	.layer0 {
+		
+	}
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+	.layer0 {
+		
+	}
+}
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
